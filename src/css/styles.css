@@ -1,0 +1,221 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/* CSS */
+body{
+    background-color: #d2bba4;
+    color: #000;
+}
+
+.cabecalho{
+    height: 80px;
+    background-color: #f6f6f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px 0 80px;
+    border-bottom: 1px solid #d2bba4;
+}
+
+.logo img{
+    width: 78px;
+    height: 78px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu li a{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.cabecalho .menu li a:hover{
+    border-bottom: 2px solid;
+}
+
+.home{
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after{
+    background-color: #dbc9b6;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(210,187,164,1) -50%, transparent 100%);
+}
+
+.home .imagem-fundo{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.home .informacoes{
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 32px;
+    padding: 80px 80px 0px 170px;
+    max-width: 780px;
+}
+
+.home .informacoes .titulo{
+    font-family: 'DM Serif Display', serif;
+    font-size: 45px;
+}
+
+.home .informacoes .texto{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-escutar, .btn-plataformas{
+    background-color: rgb(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+
+.btn-escutar:hover{
+    background-color: #d2bba4;
+}
+
+.escuteagora .capa-do-album{
+    width: 270px;
+}
+
+.escuteagora{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.escuteagora .titulo{
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.escuteagora .cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dbc9b6;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.escuteagora .informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.escuteagora .informacoes h3{
+    font-family: 'Mulish', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.escuteagora .informacoes p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.escuteagora .informacoes .plataformas{
+    display: flex;
+    flex-direction: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.escuteagora .cartao img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.escuteagora .informacoes img{
+    width: 30px;
+}
+
+.btn-plataformas{
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-plataformas img{
+    width: 30px;
+}
+
+.escuteagora .btn-plataformas .plataformas{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+.escuteagora .btn-plataformas .plataformas.ativo {
+	display: flex;
+	opacity: 1;
+}
+
+.escuteagora .btn-plataformas .plataformas li{
+    padding: 20px;
+}
+
+.escuteagora .btn-plataformas .plataformas li img{
+    width: 50px;
+}
+
+.escuteagora .btn-plataformas .plataformas li:nth-child(1):hover{
+    background-color: #74df9d;
+}
+
+.escuteagora .btn-plataformas .plataformas li:nth-child(1){
+    border: 1px solid #18d860;
+}
+
+.escuteagora .btn-plataformas .plataformas li:nth-child(2){
+    border: 1px solid #fa3c55;
+}
+
+.escuteagora .btn-plataformas .plataformas li:nth-child(2):hover{
+    background-color: #f4919e;
+}
+
+.escuteagora .btn-plataformas .plataformas li:nth-child(3){
+    border: 1px solid #a238ff;
+}
+
+.escuteagora .btn-plataformas .plataformas li:nth-child(3):hover{
+    background-color: #c385f8;
+}
